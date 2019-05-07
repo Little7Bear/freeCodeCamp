@@ -1,0 +1,135 @@
+@import "./_reset.scss";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    line-height: 65px;
+    background-color: #e0ebe8;
+    display: flex;
+    justify-content: flex-end;
+    color: #008080;
+
+    li {
+        margin-right: 55px;
+
+        a:hover {
+            color: green;
+        }
+    }
+}
+
+.intro {
+    background: #e0ebe8;
+    padding-top: 45vh;
+    height: 100vh;
+
+    p {
+        color: green;
+    }
+}
+
+.work {
+    h2 {
+        font-size: 1.5em;
+        color: #008080;
+        margin-top: 75px;
+    }
+
+    .project-container {
+        width: 35%;
+        display: inline-block;
+        margin: 40px 0;
+
+        .project {
+            color: #008080;
+            border: 2px solid lightblue;
+            width: 280px;
+            height: 220px;
+            display: inline-block;
+
+            .project-pic {
+                width: 100%;
+                height: 180px;
+                border-bottom: 2px solid lightblue;
+            }
+        }
+
+    }
+
+    .show-all {
+        display: block;
+        width: 200px;
+        margin: 40px auto 80px auto;
+        line-height: 45px;
+        background: #e0ebe8;
+        color: #008080;
+        font-weight: bold;
+        font-size: 1em;
+        border: 2px solid #90C695;
+        border-radius: 4px;
+    }
+}
+
+.contact {
+    background: #C8F7C5;
+    padding: 100px 0;
+
+    .header {
+        padding-bottom: 80px;
+    }
+
+    .contact-details {
+        display: inline-block;
+        font-weight: bold;
+        margin: 0 35px 45px 35px;
+        border: 2px solid #90C695;
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        background: #e0ebe8;
+        color: #008080;
+    }
+
+    .contact-details:hover {
+        background: #E4F1FE;
+        color: green;
+    }
+}
+
+footer {
+    padding: 20px;
+    background: #22313F;
+    color: white;
+    line-height: 40px;
+}
+
+@media only screen and (max-width: 500px) {
+    .nav-bar {
+        justify-content: center;
+
+        li {
+            margin-right: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .work {
+        .project-container {
+            width: 100%;
+        }
+    }
+}
